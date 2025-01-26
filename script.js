@@ -35,12 +35,13 @@ form.addEventListener('submit', function (event) {
         isValid = false;
         messages.push("Password cannot be less than 8 charaters.");
       }
-feedbackDiv.style.display="block";
+feedbackDiv.style.display=("block");
 if (isValid === true) {
-    feedbackDiv.textContent = "Registration Successful!";
+    feedbackDiv.textContent = "Registration successful!";
     feedbackDiv.style.color = "#28a745";
-} else {
-    feedbackDiv.textContent = messages.join('');
+} 
+if (isValid === false){
+    feedbackDiv.innerHTML = messages + "<br>".join('');
     feedbackDiv.style.color = "#dc3545";
 }
 
