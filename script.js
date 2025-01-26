@@ -43,6 +43,7 @@ if (isValid === true) {
 if (isValid === false){
     feedbackDiv.innerHTML = messages + "<br>".join('');
     feedbackDiv.style.color = "#dc3545";
+    // "messages.join"
 }
 
 
